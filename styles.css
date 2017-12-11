@@ -1,0 +1,254 @@
+
+  /* comes into effect for screens larger than or equal to 481 pixels */
+body {
+  font-size: 16px;
+  font-family: Arial;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+input.text:focus{
+  outline:none !important;
+  border:1px solid #3CFCC7;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+  #surf_day {
+    display: none;
+  }
+
+  #nav_top {
+    position: fixed;
+    overflow: hidden;
+    top: 0; left: 0;
+    background-color: #CDF9ED;
+    width: 100%;
+    height: 3em;
+    z-index: 1;
+  }
+
+  #nav_top .current {
+    background-color: #3CFCC7;
+  }
+
+  #nav_bottom {
+    position: fixed;
+    overflow: hidden;
+    bottom:0; left: 0;
+    background-color: #CDF9ED;
+    width:100%;
+    height: 4em;
+    z-index: 1;
+  }
+
+  #main_content {
+    position: absolute;
+    display:block;
+    background-color: #3CFCC7;
+    left: 0; right: 0;
+    top: 3em; bottom: 4em;
+    height: 88%;
+    z-index: 0;
+  }
+
+  #connection {
+    position: fixed;
+    font-family: courier;
+    float: right;
+    bottom: 4em; right: 0;
+    z-index: 0;
+  }
+
+  #connection-success {
+    color: green;
+  }
+
+  #connection .connection-fail {
+    color: red;
+  }
+
+  select {
+   background-color: #CDF9ED;
+   padding: 5px;
+   border: 0;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  input {
+    background-color: #CDF9ED;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  button {
+    background-color: #CDF9ED;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  #filter_div {
+    display: none;
+    text-align: center;
+  }
+
+  #dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  #dropdown_content {
+    position: fixed;
+    display: none;
+    top: 3em; right: 18em;
+    margin: 0;
+  }
+
+  #dropdown_content li {
+    display:inline-block;
+    background-color: #CDF9ED;
+    color: black;
+    margin:0;
+    font-family: arial;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  #dropdown_content li a {
+    display:block;
+    background-color: #CDF9ED;
+    color: black;
+    padding-top: 1em; padding-right: 1em;
+    padding-bottom: 1em; padding-left: 1em;
+    margin:0;
+    font-family: arial;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    list-style-type: none;
+  }
+
+
+  #error_image {
+    height: 100px;
+    width: 100px;
+  }
+
+  #nav_top .nav {
+    color: black;
+    font-family: arial;
+    display:block;
+    height:100%;
+    font-size: 1em;
+    padding-top: 1em; padding-bottom: 1em;
+    text-decoration: none;
+  }
+
+  #center_logo {
+    display: block;
+    position: absolute;
+    margin: auto;
+    height: inherit;
+    left: 0; right: 0;
+  }
+
+  #logo a {
+    top: 0; bottom: 0;
+    float: left;
+    margin-left: 1em;
+    padding-left: 1em; padding-right: 1em;
+    display: block;
+  }
+
+  #menu_select .nav {
+    top: 0; bottom: 0;
+    float: right;
+    padding-right: 1em; padding-left: 1em;
+    display: block;
+    width: 4em;
+    text-align: center;
+  }
+
+  #menu_select li {
+
+  }
+
+  #page_content {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    float: middle;
+    width: 60%;
+    height: 75%;
+    overflow-y: scroll;
+    margin: auto;
+    margin-top: 1em;
+    border-style: solid;
+    border-width: 1em;
+    border-color:#CDF9ED;
+  }
+
+  #front_image {
+    width: 10em;
+  }
+
+  #map_container {
+  }
+
+  #map_canvas {
+    height: 75%;
+    width: 60%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin:auto;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    border-style: solid;
+    border-width: 1em;
+    border-color:#CDF9ED;
+  }
+
+  #key {
+    display: none;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    float: middle;
+    width: 60%;
+    height: 65%;
+    overflow-y: scroll;
+    margin: auto;
+    margin-top: 1em;
+    border-style: solid;
+    border-width: 1em;
+    border-color:#CDF9ED;
+    z-index: 0;
+  }
+
+  .table {
+
+  }
+
+  tr:nth-child(even){
+    background-color: rgba(60, 252, 199,.5);
+  }
+
+  tr:nth-child(odd){
+    background-color: rgba(60, 252, 199,.25)
+  }
+
+  td:nth-child(odd){
+    background-color: rgba(60, 252, 199,.125);
+  }
+
+  th {
+    background-color: rgba(60, 252, 199,.75);
+    color: black;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
